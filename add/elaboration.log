@@ -1,13 +1,13 @@
-Active-HDL 10.3.3559.6081  2016-12-05 ¤W¤È 12:23:23
+Active-HDL 10.3.3559.6081  2016-12-05 ¤W¤È 12:55:28
 
 Elaboration top modules:
-Architecture                  rot(rot)
+Architecture                  shlhi(shlhi)
 
 
 -------------------------------------------------------------------------------------------
 Entity   | Architecture | Library | Info | Compiler Version          | Compilation Options
 -------------------------------------------------------------------------------------------
-rot      | rot          | add     |      | 10.3.3559.6081  (Windows) | -O3
+shlhi    | shlhi        | add     |      | 10.3.3559.6081  (Windows) | -O3
 -------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ std                     | Standard VHDL library
 -------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+rot rot rot
+Simulation Options: asim -O5 +access +r +m+shlhi shlhi shlhi
 
 
 The performance of simulation is reduced. Version Student Edition

@@ -1,1 +1,9 @@
+inv ENTITY
+testbench ENTITY
 rot ENTITY
+shlhi ENTITY
+or64 ENTITY
+clz ENTITY
+cnth ENTITY
+bit32_adder ENTITY
+and64 ENTITY
