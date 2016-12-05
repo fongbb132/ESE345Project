@@ -21,3 +21,4 @@
 .\src\mpyu.vhd
 .\src\absdb.vhd
 .\src\ALU.vhd
+.\src\regFile.vhd

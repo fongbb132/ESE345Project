@@ -21,3 +21,4 @@ i<>.\src\sfhs.vhd
 i<>.\src\mpyu.vhd
 i<>.\src\absdb.vhd
 i<>.\src\ALU.vhd
+i<>.\src\regFile.vhd

@@ -85,6 +85,7 @@ Extension7=htm;html
 /mpyu.vhd=-1
 /absdb.vhd=-1
 /ALU.vhd=-1
+/regFile.vhd=-1
 
 [Files.Data]
 .\src\primitive_type.vhd=VHDL Source Code
@@ -111,3 +112,4 @@ Extension7=htm;html
 .\src\mpyu.vhd=VHDL Source Code
 .\src\absdb.vhd=VHDL Source Code
 .\src\ALU.vhd=VHDL Source Code
+.\src\regFile.vhd=VHDL Source Code

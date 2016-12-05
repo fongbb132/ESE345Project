@@ -1,4 +1,4 @@
-238
+256
 ~E 1 "./../src/a.vhd" 5 a
 ~A 1 "./../src/a.vhd" 13 a
 ~E 1 "./../src/absdb.vhd" 5 absdb
@@ -7,6 +7,8 @@
 ~A 1 "./../src/ah.vhd" 13 ah
 ~E 1 "./../src/ahs.vhd" 5 ahs
 ~A 1 "./../src/ahs.vhd" 13 ahs
+~E 1 "./../src/ALU.vhd" 6 ALU
+~A 1 "./../src/ALU.vhd" 12 structural
 ~E 1 "./../src/and64.vhd" 4 and64
 ~A 1 "./../src/and64.vhd" 12 and64
 ~E 1 "./../src/primitive_type.vhd" 43 and_2
@@ -33,6 +35,8 @@
 ~A 1 "./../src/or64.vhd" 12 or64
 ~E 1 "./../src/primitive_type.vhd" 58 or_2
 ~A 1 "./../src/primitive_type.vhd" 64 dataflow
+~E 1 "./../src/regFile.vhd" 5 register_file
+~A 1 "./../src/regFile.vhd" 19 behavioral
 ~E 1 "./../src/rot.vhd" 5 rot
 ~A 1 "./../src/rot.vhd" 13 rot
 ~E 1 "./../src/sfh.vhd" 5 sfh
