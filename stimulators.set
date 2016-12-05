@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+	<document type="stimulators" version="1">
+		<set name="ASDB Stimulators" active="1">
+			<stimulator>
+				<signal_path value="/clz/i1"/>
+				<rawdescription value="VAL:FRM:Override:0000010101010101000001010101010100000001010101010000010101010101:&lt;= 0000010101010101000001010101010100000001010101010000010101010101:0:"/>
+			</stimulator>
+		</set>
+	</document>
+</XML>

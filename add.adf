@@ -1,0 +1,95 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=add
+
+[Library]
+add=.\add\add.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+add=.
+Active_lib=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Folders]
+Name3=Makefiles
+Directory3=c:\My_Designs\ESE345Project\
+Extension3=mak
+Name4=Memory
+Directory4=c:\My_Designs\ESE345Project\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=c:\My_Designs\ESE345Project\
+Extension5=dll
+Name6=PDF
+Directory6=c:\My_Designs\ESE345Project\
+Extension6=pdf
+Name7=HTML
+Directory7=c:\My_Designs\ESE345Project\
+Extension7=htm;html
+
+[Files]
+/primitive_type.vhd=-1
+/xor_2.vhd=-1
+/half_adder.vhd=-1
+/full_adder.vhd=-1
+/test_bench_full_adder.vhd=-1
+/4bitAdder.vhd=-1
+/bit16_adder.vhd=-1
+/bit32_adder.vhd=-1
+/and64.vhd=-1
+/or64.vhd=-1
+/cnth.vhd=-1
+/clz.vhd=-1
+/rot.vhd=-1
+/shlhi.vhd=-1
+
+[Files.Data]
+.\src\primitive_type.vhd=VHDL Source Code
+.\src\xor_2.vhd=VHDL Source Code
+.\src\half_adder.vhd=VHDL Source Code
+.\src\full_adder.vhd=VHDL Source Code
+.\src\test_bench_full_adder.vhd=VHDL Source Code
+.\src\4bitAdder.vhd=VHDL Source Code
+.\src\bit16_adder.vhd=VHDL Source Code
+.\src\bit32_adder.vhd=VHDL Source Code
+.\src\and64.vhd=VHDL Source Code
+
+.\src\or64.vhd=VHDL Source Code
+.\src\cnth.vhd=VHDL Source Code
+.\src\clz.vhd=VHDL Source Code
+.\src\rot.vhd=VHDL Source Code
+.\src\shlhi.vhd=VHDL Source Code

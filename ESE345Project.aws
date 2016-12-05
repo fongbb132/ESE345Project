@@ -1,0 +1,14 @@
+[Version]
+Version=10.3
+[Designs]
+add=.\add.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+add=1
+[Settings]
+Active=add

@@ -1,0 +1,14 @@
+.\src\primitive_type.vhd
+.\src\xor_2.vhd
+.\src\half_adder.vhd
+.\src\full_adder.vhd
+.\src\test_bench_full_adder.vhd
+.\src\4bitAdder.vhd
+.\src\bit16_adder.vhd
+.\src\bit32_adder.vhd
+.\src\and64.vhd
+.\src\or64.vhd
+.\src\cnth.vhd
+.\src\clz.vhd
+.\src\rot.vhd
+.\src\shlhi.vhd

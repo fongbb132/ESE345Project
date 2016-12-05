@@ -1,0 +1,26 @@
+V 000044 55 866           1480915400181 rot
+(_unit VHDL (rot 0 5(rot 0 13))
+	(_version vd0)
+	(_time 1480915400182 2016.12.05 00:23:20)
+	(_source (\./../src/rot.vhd\))
+	(_parameters tan)
+	(_code ecebe8bfe9babcfbefedaab7b9ebeeeabaebe8ebee)
+	(_ent
+		(_time 1480915400179)
+	)
+	(_object
+		(_type (_int ~STD_LOGIC_VECTOR{63~downto~0}~12 0 7(_array -1 ((_dto i 63 i 0)))))
+		(_port (_int i1 0 0 7(_ent(_in))))
+		(_port (_int i2 0 0 8(_ent(_in))))
+		(_port (_int o1 0 0 9(_ent(_out))))
+		(_var (_int c0 -2 0 17(_prcs 0)))
+		(_prcs
+			(line__15(_arch 0 0 15(_prcs (_simple)(_trgt(2))(_sens(0))(_mon)(_read(1(d_5_0))))))
+		)
+		(_type (_ext ~extieee.std_logic_1164.STD_LOGIC (0 STD_LOGIC)))
+		(_type (_ext ~extstd.standard.INTEGER (1 INTEGER)))
+		(_type (_ext ~extieee.NUMERIC_STD.UNSIGNED (2 UNSIGNED)))
+	)
+	(_use (ieee(std_logic_1164))(std(standard))(ieee(NUMERIC_STD)))
+	(_model . rot 1 -1)
+)
