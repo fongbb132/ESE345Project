@@ -19,3 +19,5 @@
 .\src\ahs.vhd
 .\src\sfhs.vhd
 .\src\mpyu.vhd
+.\src\absdb.vhd
+.\src\ALU.vhd

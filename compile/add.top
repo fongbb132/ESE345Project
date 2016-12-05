@@ -10,7 +10,8 @@ or64 ENTITY
 clz ENTITY
 cnth ENTITY
 bit32_adder ENTITY
-a ENTITY
+ah ENTITY
 ahs ENTITY
 and64 ENTITY
-ah ENTITY
+a ENTITY
+absdb ENTITY

@@ -1,13 +1,13 @@
-Active-HDL 10.3.3559.6081  2016-12-05 ¤W¤È 03:24:20
+Active-HDL 10.3.3559.6081  2016-12-05 ¤W¤È 10:20:43
 
 Elaboration top modules:
-Architecture                  mpyu(mpyu)
+Architecture                  absdb(absdb)
 
 
 -------------------------------------------------------------------------------------------
 Entity   | Architecture | Library | Info | Compiler Version          | Compilation Options
 -------------------------------------------------------------------------------------------
-mpyu     | mpyu         | add     |      | 10.3.3559.6081  (Windows) | -O3
+absdb    | absdb        | add     |      | 10.3.3559.6081  (Windows) | -O3
 -------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ std                     | Standard VHDL library
 -------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+mpyu mpyu mpyu
+Simulation Options: asim -O5 +access +r +m+absdb absdb absdb
 
 
 The performance of simulation is reduced. Version Student Edition
