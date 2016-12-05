@@ -76,6 +76,10 @@ Extension7=htm;html
 /clz.vhd=-1
 /rot.vhd=-1
 /shlhi.vhd=-1
+/a.vhd=-1
+/sfw.vhd=-1
+/ah.vhd=-1
+/sfh.vhd=-1
 
 [Files.Data]
 .\src\primitive_type.vhd=VHDL Source Code
@@ -93,3 +97,7 @@ Extension7=htm;html
 .\src\clz.vhd=VHDL Source Code
 .\src\rot.vhd=VHDL Source Code
 .\src\shlhi.vhd=VHDL Source Code
+.\src\a.vhd=VHDL Source Code
+.\src\sfw.vhd=VHDL Source Code
+.\src\ah.vhd=VHDL Source Code
+.\src\sfh.vhd=VHDL Source Code

@@ -1,13 +1,13 @@
-Active-HDL 10.3.3559.6081  2016-12-05 ¤W¤È 12:55:28
+Active-HDL 10.3.3559.6081  2016-12-05 ¤W¤È 01:46:39
 
 Elaboration top modules:
-Architecture                  shlhi(shlhi)
+Architecture                  sfh(sfh)
 
 
 -------------------------------------------------------------------------------------------
 Entity   | Architecture | Library | Info | Compiler Version          | Compilation Options
 -------------------------------------------------------------------------------------------
-shlhi    | shlhi        | add     |      | 10.3.3559.6081  (Windows) | -O3
+sfh      | sfh          | add     |      | 10.3.3559.6081  (Windows) | -O3
 -------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ std                     | Standard VHDL library
 -------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+shlhi shlhi shlhi
+Simulation Options: asim -O5 +access +r +m+sfh sfh sfh
 
 
 The performance of simulation is reduced. Version Student Edition

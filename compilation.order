@@ -12,3 +12,7 @@
 .\src\clz.vhd
 .\src\rot.vhd
 .\src\shlhi.vhd
+.\src\a.vhd
+.\src\sfw.vhd
+.\src\ah.vhd
+.\src\sfh.vhd

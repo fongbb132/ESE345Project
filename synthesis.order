@@ -12,3 +12,7 @@ i<>.\src\cnth.vhd
 i<>.\src\clz.vhd
 i<>.\src\rot.vhd
 i<>.\src\shlhi.vhd
+i<>.\src\a.vhd
+i<>.\src\sfw.vhd
+i<>.\src\ah.vhd
+i<>.\src\sfh.vhd

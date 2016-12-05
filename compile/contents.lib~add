@@ -1,4 +1,8 @@
-192
+201
+~E 1 "./../src/a.vhd" 5 a
+~A 1 "./../src/a.vhd" 13 a
+~E 1 "./../src/ah.vhd" 5 ah
+~A 1 "./../src/ah.vhd" 13 ah
 ~E 1 "./../src/and64.vhd" 4 and64
 ~A 1 "./../src/and64.vhd" 12 and64
 ~E 1 "./../src/primitive_type.vhd" 43 and_2
@@ -25,6 +29,10 @@
 ~A 1 "./../src/primitive_type.vhd" 64 dataflow
 ~E 1 "./../src/rot.vhd" 5 rot
 ~A 1 "./../src/rot.vhd" 13 rot
+~E 1 "./../src/sfh.vhd" 5 sfh
+~A 1 "./../src/sfh.vhd" 13 sfh
+~E 1 "./../src/sfw.vhd" 5 sfw
+~A 1 "./../src/sfw.vhd" 13 sfw
 ~E 1 "./../src/shlhi.vhd" 5 shlhi
 ~A 1 "./../src/shlhi.vhd" 13 shlhi
 ~E 1 "./../src/test_bench_full_adder.vhd" 28 testbench
