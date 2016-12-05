@@ -1,4 +1,4 @@
-256
+271
 ~E 1 "./../src/a.vhd" 5 a
 ~A 1 "./../src/a.vhd" 13 a
 ~E 1 "./../src/absdb.vhd" 5 absdb
@@ -31,6 +31,8 @@
 ~A 1 "./../src/primitive_type.vhd" 34 dataflow
 ~E 1 "./../src/mpyu.vhd" 5 mpyu
 ~A 1 "./../src/mpyu.vhd" 13 mpyu
+~E 1 "./../src/mux16to1.vhd" 4 mux16to1
+~A 1 "./../src/mux16to1.vhd" 13 structural
 ~E 1 "./../src/or64.vhd" 4 or64
 ~A 1 "./../src/or64.vhd" 12 or64
 ~E 1 "./../src/primitive_type.vhd" 58 or_2

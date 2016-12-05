@@ -22,3 +22,5 @@
 .\src\absdb.vhd
 .\src\ALU.vhd
 .\src\regFile.vhd
+.\src\mux16to1.vhd
+.\src\InstBuff.vhd

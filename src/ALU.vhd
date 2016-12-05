@@ -10,47 +10,80 @@ entity ALU is
 end ALU;
 
 architecture structural of ALU is	   	
-	signal rdAnd, rdOr: std_logic_vector(63 downto 0);
-begin		
+	signal port1, port2,port3, port4,port5, port6,port7, port8,port9, port10,port11, port12,port13, port14,port15,port16: std_logic_vector(63 downto 0);
+begin				   
+	
+	u0:entity mux16to1 port map(port16=>port16, port2=>port2,port3=>port3, port4=>port4,port5=>port5, port6=>port6,port7=>port7, port8=>port8,port9=>port9, port10=>port10,
+		port11=>port11, port12=>port12,port13=>port13, port14=>port14,port15=>port15,	
+		opcode => opcode, output=>result);				
+	
 	u1:entity and64 port map(i1=>a_in, 
 	i2=>b_in, 
-	o1=>rdAnd);	
+	o1=>port3);	
 	
 	u2:entity or64 port map(i1=>a_in, 
 	i2=>b_in, 
-	o1=>rdOr);	
+	o1=>port4);		   
 	
-	 
+	u3:entity cnth port map(i1=>a_in, 
 	
-	process(a_in, b_in,opcode)
-	begin
-	if(opcode = "0000") then 
-
-	elsif(opcode ="0001") then
-
-	elsif(opcode = "0010") then		  
-		result<=rdAnd;
-	elsif(opcode = "0011") then	  	  
-		result<=rdOr;
-
-	elsif(opcode = "0100") then
-
-	elsif(opcode = "0101") then
+	o1=>port5);
 	
-	elsif(opcode = "0110") then
 	
-	elsif(opcode = "0111") then
+	u4:entity clz port map(i1=>a_in, 
 	
-	elsif(opcode = "1000") then
+	o1=>port6);	 
 	
-	elsif(opcode = "1001") then
-		
-
-
-	end if; 	   
 	
-
-	end process;
+	
+	u5:entity rot port map(i1=>a_in, 
+	i2=>b_in, 
+	o1=>port7);	
+	
+	u6:entity shlhi port map(i1=>a_in, 
+	i2=>b_in, 
+	o1=>port8);
+	
+	
+	u7:entity a port map(i1=>a_in, 
+	i2=>b_in, 
+	o1=>port9);	 
+	
+	
+	
+	u8:entity sfw port map(i1=>a_in, 
+	i2=>b_in, 
+	o1=>port10);	
+	
+	u9:entity ah port map(i1=>a_in, 
+	i2=>b_in, 
+	o1=>port11);
+	
+	
+	u10:entity sfh port map(i1=>a_in, 
+	i2=>b_in, 
+	o1=>port12);	 
+	
+	
+	
+	u11:entity ahs port map(i1=>a_in, 
+	i2=>b_in, 
+	o1=>port13);	
+	
+	u12:entity sfhs port map(i1=>a_in, 
+	i2=>b_in, 
+	o1=>port14);
+	
+	
+	u13:entity mpyu port map(i1=>a_in, 
+	i2=>b_in, 
+	o1=>port15);	 
+	
+	
+	
+	u14:entity absdb port map(i1=>a_in, 
+	i2=>b_in, 
+	o1=>port16);	
 end structural;
 
 

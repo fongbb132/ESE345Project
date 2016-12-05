@@ -1,34 +1,49 @@
-Active-HDL 10.3.3559.6081  2016-12-05 ¤U¤È 02:18:09
+Active-HDL 10.3.3559.6081  2016-12-05 ¤U¤È 04:58:20
 
 Elaboration top modules:
-Architecture                  behavioral(register_file)
+Architecture                  structural(ALU)
 
 
-------------------------------------------------------------------------------------------------
-Entity        | Architecture | Library | Info | Compiler Version          | Compilation Options
-------------------------------------------------------------------------------------------------
-register_file | behavioral   | add     |      | 10.3.3559.6081  (Windows) | -O3
-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+Entity   | Architecture | Library | Info | Compiler Version          | Compilation Options
+-------------------------------------------------------------------------------------------
+ALU      | structural   | add     |      | 10.3.3559.6081  (Windows) | -O3
+mux16to1 | structural   | add     |      | 10.3.3559.6081  (Windows) | -O3
+and64    | and64        | add     |      | 10.3.3559.6081  (Windows) | -O3
+or64     | or64         | add     |      | 10.3.3559.6081  (Windows) | -O3
+cnth     | cnth         | add     |      | 10.3.3559.6081  (Windows) | -O3
+clz      | clz          | add     |      | 10.3.3559.6081  (Windows) | -O3
+rot      | rot          | add     |      | 10.3.3559.6081  (Windows) | -O3
+shlhi    | shlhi        | add     |      | 10.3.3559.6081  (Windows) | -O3
+a        | a            | add     |      | 10.3.3559.6081  (Windows) | -O3
+sfw      | sfw          | add     |      | 10.3.3559.6081  (Windows) | -O3
+ah       | ah           | add     |      | 10.3.3559.6081  (Windows) | -O3
+sfh      | sfh          | add     |      | 10.3.3559.6081  (Windows) | -O3
+ahs      | ahs          | add     |      | 10.3.3559.6081  (Windows) | -O3
+sfhs     | sfhs         | add     |      | 10.3.3559.6081  (Windows) | -O3
+mpyu     | mpyu         | add     |      | 10.3.3559.6081  (Windows) | -O3
+absdb    | absdb        | add     |      | 10.3.3559.6081  (Windows) | -O3
+-------------------------------------------------------------------------------------------
 
-------------------------------------------------------------------------------------------------
-VHDL Package                 | Library | Info | Compiler Version          | Compilation Options
-------------------------------------------------------------------------------------------------
-standard                     | std     |      |                           | <unavailable>
-TEXTIO                       | std     |      | 10.3.3559.6081  (Windows) |  -2008
-std_logic_1164               | ieee    |      | 10.3.3559.6081  (Windows) |  -2008
-NUMERIC_STD                  | ieee    |      | 10.3.3559.6081  (Windows) |  -2008
-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+VHDL Package            | Library | Info | Compiler Version          | Compilation Options
+-------------------------------------------------------------------------------------------
+standard                | std     |      |                           | <unavailable>
+TEXTIO                  | std     |      | 10.3.3559.6081  (Windows) |  -2008
+std_logic_1164          | ieee    |      | 10.3.3559.6081  (Windows) |  -2008
+NUMERIC_STD             | ieee    |      | 10.3.3559.6081  (Windows) |  -2008
+-------------------------------------------------------------------------------------------
 
-------------------------------------------------------------------------------------------------
-Library                      | Comment
-------------------------------------------------------------------------------------------------
-add                          | None
-ieee                         | Standard IEEE packages library
-std                          | Standard VHDL library
-------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+Library                 | Comment
+-------------------------------------------------------------------------------------------
+add                     | None
+ieee                    | Standard IEEE packages library
+std                     | Standard VHDL library
+-------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+register_file register_file behavioral
+Simulation Options: asim -O5 +access +r +m+ALU ALU structural
 
 
 The performance of simulation is reduced. Version Student Edition

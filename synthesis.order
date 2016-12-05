@@ -22,3 +22,5 @@ i<>.\src\mpyu.vhd
 i<>.\src\absdb.vhd
 i<>.\src\ALU.vhd
 i<>.\src\regFile.vhd
+i<>.\src\mux16to1.vhd
+i<>.\src\InstBuff.vhd

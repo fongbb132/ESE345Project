@@ -86,6 +86,8 @@ Extension7=htm;html
 /absdb.vhd=-1
 /ALU.vhd=-1
 /regFile.vhd=-1
+/mux16to1.vhd=-1
+/InstBuff.vhd=-1
 
 [Files.Data]
 .\src\primitive_type.vhd=VHDL Source Code
@@ -113,3 +115,5 @@ Extension7=htm;html
 .\src\absdb.vhd=VHDL Source Code
 .\src\ALU.vhd=VHDL Source Code
 .\src\regFile.vhd=VHDL Source Code
+.\src\mux16to1.vhd=VHDL Source Code
+.\src\InstBuff.vhd=VHDL Source Code
