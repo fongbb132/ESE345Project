@@ -1,13 +1,13 @@
-Active-HDL 10.3.3559.6081  2016-12-05 ¤W¤È 01:46:39
+Active-HDL 10.3.3559.6081  2016-12-05 ¤W¤È 03:24:20
 
 Elaboration top modules:
-Architecture                  sfh(sfh)
+Architecture                  mpyu(mpyu)
 
 
 -------------------------------------------------------------------------------------------
 Entity   | Architecture | Library | Info | Compiler Version          | Compilation Options
 -------------------------------------------------------------------------------------------
-sfh      | sfh          | add     |      | 10.3.3559.6081  (Windows) | -O3
+mpyu     | mpyu         | add     |      | 10.3.3559.6081  (Windows) | -O3
 -------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ std                     | Standard VHDL library
 -------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+sfh sfh sfh
+Simulation Options: asim -O5 +access +r +m+mpyu mpyu mpyu
 
 
 The performance of simulation is reduced. Version Student Edition

@@ -6382,3 +6382,367 @@ acom -O3 -e 100 -work add -2002  $dsn/src/shlhi.vhd
 #  Simulation has been initialized
 endsim
 # VSIM: Simulation has finished.
+# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
+asim -O5 +access +r +m+shlhi shlhi shlhi
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6207 kB (elbread=1280 elab2=4777 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ESE345Project\src\wave.asdb
+#  上午 12:55, 2016年12月5日
+#  Simulation has been initialized
+# 3 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+acom -O3 -e 100 -work add -2002  $dsn/src/a.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\a.vhd
+# Compile Entity "shlhi"
+# Error: COMP96_0078: a.vhd : (1, 5): Unknown identifier "IEEE".
+# Error: COMP96_0078: a.vhd : (2, 5): Unknown identifier "ieee".
+# Error: COMP96_0078: a.vhd : (6, 12): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: a.vhd : (6, 12): Unknown type.
+# Error: COMP96_0078: a.vhd : (7, 12): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: a.vhd : (7, 12): Unknown type.
+# Error: COMP96_0078: a.vhd : (8, 12): Unknown identifier "std_logic_vector".
+# Error: COMP96_0064: a.vhd : (8, 12): Unknown type.
+# Compile Architecture "shlhi" of Entity "shlhi"
+# Error: COMP96_0015: a.vhd : (18, 91): ';' expected.
+# Compile failure 9 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/a.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\a.vhd
+# Compile Entity "a"
+# Compile Architecture "a" of Entity "a"
+# Error: COMP96_0015: a.vhd : (19, 91): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/a.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\a.vhd
+# Compile Entity "a"
+# Compile Architecture "a" of Entity "a"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+a a a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6205 kB (elbread=1280 elab2=4775 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ESE345Project\src\wave.asdb
+#  上午 01:05, 2016年12月5日
+#  Simulation has been initialized
+# 3 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6205 kB (elbread=1280 elab2=4775 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ESE345Project\src\wave.asdb
+#  上午 01:07, 2016年12月5日
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work add -2002  $dsn/src/sfw.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\sfw.vhd
+# Compile Entity "sfw"
+# Compile Architecture "sfw" of Entity "sfw"
+# Error: COMP96_0015: sfw.vhd : (19, 91): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/sfw.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\sfw.vhd
+# Compile Entity "sfw"
+# Compile Architecture "sfw" of Entity "sfw"
+# Error: COMP96_0071: sfw.vhd : (19, 66): Operator "-" is not defined for such operands.
+# Error: COMP96_0077: sfw.vhd : (19, 20): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/sfw.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\sfw.vhd
+# Compile Entity "sfw"
+# Compile Architecture "sfw" of Entity "sfw"
+# Error: COMP96_0015: sfw.vhd : (19, 90): ')' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/sfw.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\sfw.vhd
+# Compile Entity "sfw"
+# Compile Architecture "sfw" of Entity "sfw"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/sfw.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\sfw.vhd
+# Compile Entity "sfw"
+# Compile Architecture "sfw" of Entity "sfw"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim -O5 +access +r +m+a a a
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6205 kB (elbread=1280 elab2=4775 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ESE345Project\src\wave.asdb
+#  上午 01:08, 2016年12月5日
+#  Simulation has been initialized
+# 3 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sfw sfw sfw
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6205 kB (elbread=1280 elab2=4775 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ESE345Project\src\wave.asdb
+#  上午 01:09, 2016年12月5日
+#  Simulation has been initialized
+# 3 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+run 1000 ns
+# KERNEL: stopped at time: 2 us
+acom -O3 -e 100 -work add -2002  $dsn/src/sfw.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\sfw.vhd
+# Compile Entity "sfw"
+# Compile Architecture "sfw" of Entity "sfw"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sfw sfw sfw
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6205 kB (elbread=1280 elab2=4775 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ESE345Project\src\wave.asdb
+#  上午 01:10, 2016年12月5日
+#  Simulation has been initialized
+# 3 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+run 1000 ns
+# KERNEL: stopped at time: 2 us
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work add -2002  $dsn/src/sfw.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\sfw.vhd
+# Compile Entity "sfw"
+# Compile Architecture "sfw" of Entity "sfw"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+asim -O5 +access +r +m+sfw sfw sfw
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6205 kB (elbread=1280 elab2=4775 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ESE345Project\src\wave.asdb
+#  上午 01:13, 2016年12月5日
+#  Simulation has been initialized
+# 3 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work add -2002  $dsn/src/ah.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ah.vhd
+# Compile Entity "ah"
+# Compile Architecture "ah" of Entity "ah"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+ah ah ah
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6205 kB (elbread=1280 elab2=4776 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ESE345Project\src\wave.asdb
+#  上午 01:17, 2016年12月5日
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+# 3 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+run 1000 ns
+# KERNEL: stopped at time: 2 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6205 kB (elbread=1280 elab2=4776 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ESE345Project\src\wave.asdb
+#  上午 01:19, 2016年12月5日
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+acom -O3 -e 100 -work add -2002  $dsn/src/primitive_type.vhd $dsn/src/xor_2.vhd $dsn/src/half_adder.vhd $dsn/src/full_adder.vhd $dsn/src/test_bench_full_adder.vhd $dsn/src/4bitAdder.vhd $dsn/src/bit16_adder.vhd $dsn/src/bit32_adder.vhd $dsn/src/and64.vhd $dsn/src/or64.vhd $dsn/src/cnth.vhd $dsn/src/clz.vhd $dsn/src/rot.vhd $dsn/src/shlhi.vhd $dsn/src/a.vhd $dsn/src/sfw.vhd $dsn/src/ah.vhd $dsn/src/sfh.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\primitive_type.vhd
+# Compile Entity "inv"
+# Compile Architecture "dataflow" of Entity "inv"
+# Compile Entity "and_2"
+# Compile Architecture "dataflow" of Entity "and_2"
+# Compile Entity "or_2"
+# Compile Architecture "dataflow" of Entity "or_2"
+# File: c:\My_Designs\ESE345Project\src\xor_2.vhd
+# Compile Entity "xor_2"
+# Compile Architecture "xor_2" of Entity "xor_2"
+# File: c:\My_Designs\ESE345Project\src\half_adder.vhd
+# Compile Entity "half_adder"
+# Compile Architecture "structural" of Entity "half_add

@@ -1,8 +1,10 @@
-201
+229
 ~E 1 "./../src/a.vhd" 5 a
 ~A 1 "./../src/a.vhd" 13 a
 ~E 1 "./../src/ah.vhd" 5 ah
 ~A 1 "./../src/ah.vhd" 13 ah
+~E 1 "./../src/ahs.vhd" 5 ahs
+~A 1 "./../src/ahs.vhd" 13 ahs
 ~E 1 "./../src/and64.vhd" 4 and64
 ~A 1 "./../src/and64.vhd" 12 and64
 ~E 1 "./../src/primitive_type.vhd" 43 and_2
@@ -23,6 +25,8 @@
 ~A 1 "./../src/half_adder.vhd" 23 structural
 ~E 1 "./../src/primitive_type.vhd" 28 inv
 ~A 1 "./../src/primitive_type.vhd" 34 dataflow
+~E 1 "./../src/mpyu.vhd" 5 mpyu
+~A 1 "./../src/mpyu.vhd" 13 mpyu
 ~E 1 "./../src/or64.vhd" 4 or64
 ~A 1 "./../src/or64.vhd" 12 or64
 ~E 1 "./../src/primitive_type.vhd" 58 or_2
@@ -31,6 +35,8 @@
 ~A 1 "./../src/rot.vhd" 13 rot
 ~E 1 "./../src/sfh.vhd" 5 sfh
 ~A 1 "./../src/sfh.vhd" 13 sfh
+~E 1 "./../src/sfhs.vhd" 5 sfhs
+~A 1 "./../src/sfhs.vhd" 13 sfhs
 ~E 1 "./../src/sfw.vhd" 5 sfw
 ~A 1 "./../src/sfw.vhd" 13 sfw
 ~E 1 "./../src/shlhi.vhd" 5 shlhi

@@ -80,6 +80,9 @@ Extension7=htm;html
 /sfw.vhd=-1
 /ah.vhd=-1
 /sfh.vhd=-1
+/ahs.vhd=-1
+/sfhs.vhd=-1
+/mpyu.vhd=-1
 
 [Files.Data]
 .\src\primitive_type.vhd=VHDL Source Code
@@ -101,3 +104,6 @@ Extension7=htm;html
 .\src\sfw.vhd=VHDL Source Code
 .\src\ah.vhd=VHDL Source Code
 .\src\sfh.vhd=VHDL Source Code
+.\src\ahs.vhd=VHDL Source Code
+.\src\sfhs.vhd=VHDL Source Code
+.\src\mpyu.vhd=VHDL Source Code

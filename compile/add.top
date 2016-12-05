@@ -1,9 +1,16 @@
 inv ENTITY
+sfw ENTITY
 testbench ENTITY
-rot ENTITY
 shlhi ENTITY
+sfh ENTITY
+sfhs ENTITY
+rot ENTITY
+mpyu ENTITY
 or64 ENTITY
 clz ENTITY
 cnth ENTITY
 bit32_adder ENTITY
+a ENTITY
+ahs ENTITY
 and64 ENTITY
+ah ENTITY

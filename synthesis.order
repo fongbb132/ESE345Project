@@ -16,3 +16,6 @@ i<>.\src\a.vhd
 i<>.\src\sfw.vhd
 i<>.\src\ah.vhd
 i<>.\src\sfh.vhd
+i<>.\src\ahs.vhd
+i<>.\src\sfhs.vhd
+i<>.\src\mpyu.vhd

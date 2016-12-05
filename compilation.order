@@ -16,3 +16,6 @@
 .\src\sfw.vhd
 .\src\ah.vhd
 .\src\sfh.vhd
+.\src\ahs.vhd
+.\src\sfhs.vhd
+.\src\mpyu.vhd
