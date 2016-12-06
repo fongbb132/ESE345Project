@@ -1,4 +1,4 @@
-271
+352
 ~E 1 "./../src/a.vhd" 5 a
 ~A 1 "./../src/a.vhd" 13 a
 ~E 1 "./../src/absdb.vhd" 5 absdb
@@ -8,7 +8,7 @@
 ~E 1 "./../src/ahs.vhd" 5 ahs
 ~A 1 "./../src/ahs.vhd" 13 ahs
 ~E 1 "./../src/ALU.vhd" 6 ALU
-~A 1 "./../src/ALU.vhd" 12 structural
+~A 1 "./../src/ALU.vhd" 14 structural
 ~E 1 "./../src/and64.vhd" 4 and64
 ~A 1 "./../src/and64.vhd" 12 and64
 ~E 1 "./../src/primitive_type.vhd" 43 and_2
@@ -27,6 +27,12 @@
 ~A 1 "./../src/full_adder.vhd" 19 structural
 ~E 1 "./../src/half_adder.vhd" 18 half_adder
 ~A 1 "./../src/half_adder.vhd" 23 structural
+~E 1 "./../src/ID_EX_REG.vhd" 6 ID_EX_Reg
+~A 1 "./../src/ID_EX_REG.vhd" 18 ID_EX_Reg
+~E 1 "./../src/IF_ID_Reg.vhd" 6 IF_ID_Reg
+~A 1 "./../src/IF_ID_Reg.vhd" 13 IF_ID_Reg
+~E 1 "./../src/InstBuff.vhd" 14 instruction_buffer
+~A 1 "./../src/InstBuff.vhd" 24 structural
 ~E 1 "./../src/primitive_type.vhd" 28 inv
 ~A 1 "./../src/primitive_type.vhd" 34 dataflow
 ~E 1 "./../src/mpyu.vhd" 5 mpyu
@@ -37,8 +43,10 @@
 ~A 1 "./../src/or64.vhd" 12 or64
 ~E 1 "./../src/primitive_type.vhd" 58 or_2
 ~A 1 "./../src/primitive_type.vhd" 64 dataflow
+~E 1 "./../src/piplinedUnit.vhd" 7 pipelinedUnit
+~A 1 "./../src/piplinedUnit.vhd" 19 structural
 ~E 1 "./../src/regFile.vhd" 5 register_file
-~A 1 "./../src/regFile.vhd" 19 behavioral
+~A 1 "./../src/regFile.vhd" 22 behavioral
 ~E 1 "./../src/rot.vhd" 5 rot
 ~A 1 "./../src/rot.vhd" 13 rot
 ~E 1 "./../src/sfh.vhd" 5 sfh
@@ -47,9 +55,12 @@
 ~A 1 "./../src/sfhs.vhd" 13 sfhs
 ~E 1 "./../src/sfw.vhd" 5 sfw
 ~A 1 "./../src/sfw.vhd" 13 sfw
+~E 1 "./../src/IF_ID_Reg.vhd" 6 shift_reg_en
+~A 1 "./../src/IF_ID_Reg.vhd" 13 post_vhdl_08
 ~E 1 "./../src/shlhi.vhd" 5 shlhi
 ~A 1 "./../src/shlhi.vhd" 13 shlhi
 ~E 1 "./../src/test_bench_full_adder.vhd" 28 testbench
 ~A 1 "./../src/test_bench_full_adder.vhd" 31 behavior
+~A 1 "./../src/testbench.vhd" 8 tb
 ~E 1 "./../src/xor_2.vhd" 28 xor_2
 ~A 1 "./../src/xor_2.vhd" 36 xor_2

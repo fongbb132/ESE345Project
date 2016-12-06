@@ -3,32 +3,16 @@
 	<document type="stimulators" version="1">
 		<set name="ASDB Stimulators" active="1">
 			<stimulator>
-				<signal_path value="/register_file/clk"/>
-				<rawdescription value="CLK:FRM:Override:100.000000;2;1;0;50;1:Clock:1:"/>
+				<signal_path value="/ALU/a_in"/>
+				<rawdescription value="RND:FRM:Override:\RANDOM\1\0\0\793695541\100.000000ns\0.000000fs:Uniform Distribution:1:"/>
 			</stimulator>
 			<stimulator>
-				<signal_path value="/register_file/rd"/>
-				<rawdescription value="VAL:FRM:Override:0110100110101010101111:&lt;= 0110100110101010101111:1:"/>
+				<signal_path value="/ALU/b_in"/>
+				<rawdescription value="RND:FRM:Override:\RANDOM\1\0\0\793695541\50.000000ns\0.000000fs:Uniform Distribution:1:"/>
 			</stimulator>
 			<stimulator>
-				<signal_path value="/register_file/regASel"/>
-				<rawdescription value="VAL:FRM:Override:0111:&lt;= 0111:1:"/>
-			</stimulator>
-			<stimulator>
-				<signal_path value="/register_file/regBSel"/>
-				<rawdescription value="VAL:FRM:Override:0100:&lt;= 0100:1:"/>
-			</stimulator>
-			<stimulator>
-				<signal_path value="/register_file/rs"/>
-				<rawdescription value="VAL:FRM:Override:01101101:&lt;= 01101101:0:"/>
-			</stimulator>
-			<stimulator>
-				<signal_path value="/register_file/writeEnable"/>
-				<rawdescription value="FRM:FRM:Override:0 200 ns, 1 400 ns -r 400 ns:Formula:1:"/>
-			</stimulator>
-			<stimulator>
-				<signal_path value="/register_file/writeRegSel"/>
-				<rawdescription value="VAL:FRM:Override:0100:&lt;= 0100:1:"/>
+				<signal_path value="/ALU/opcode"/>
+				<rawdescription value="FRM:FRM:Override:0000 200 ns, 0001 400 ns, 0010 600 ns, 0011 800 ns, 0100 1000 ns, 0101 1200 ns, 0110 1400 ns, 0111 1600 ns, 1000 1800 ns, 1001 2000 ns, 1010 2200 ns, 1011 2400 ns, 1100 2600 ns, 1101 2800 ns, 1110 3000 ns, 1111 3200 ns:Formula:0:"/>
 			</stimulator>
 		</set>
 	</document>

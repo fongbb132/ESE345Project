@@ -24,3 +24,7 @@ i<>.\src\ALU.vhd
 i<>.\src\regFile.vhd
 i<>.\src\mux16to1.vhd
 i<>.\src\InstBuff.vhd
+i<>.\src\IF_ID_Reg.vhd
+i<>.\src\ID_EX_REG.vhd
+i<>.\src\piplinedUnit.vhd
+i<>.\src\testbench.vhd

@@ -5,7 +5,7 @@ entity mux16to1 is
 	port( 
 
 	port16, port2,port3, port4, port5, port6, port7, port8, port9, port10, port11, port12, port13, port14, port15: in std_logic_vector(63 downto 0);
-
+	rt,rs: in std_logic_vector(3 downto 0); 
 	opcode: in std_logic_vector(3 downto 0);
 	output: out std_logic_vector(63 downto 0));
 end mux16to1;
@@ -18,7 +18,7 @@ begin
 	if(opcode = "0000") then
 		output<="0000000000000000000000000000000000000000000000000000000000000000";
 	elsif (opcode = "0001") then
-		output<=port2;			 		
+		output<=rt&rs&rt&rs&rt&rs&rt&rs&rt&rs&rt&rs&rt&rs&rt&rs;			 		
 
 	elsif (opcode ="0010") then 
 		output<=port3;		   

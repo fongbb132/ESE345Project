@@ -8716,3 +8716,851 @@ step -out
 # KERNEL: Simulation has finished. There are no more test vectors to simulate.
 endsim
 # VSIM: Simulation has finished.
+asim -O5 +access +r +m+ALU ALU structural
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7230 kB (elbread=1280 elab2=5800 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ESE345Project\src\wave.asdb
+#  下午 01:39, 2016年12月5日
+#  Simulation has been initialized
+# 6 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+acom -O3 -e 100 -work add -2002  $dsn/src/regFile.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\regFile.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+register_file register_file behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6208 kB (elbread=1280 elab2=4778 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ESE345Project\src\wave.asdb
+#  下午 02:18, 2016年12月5日
+#  Simulation has been initialized
+# 9 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+# Error: Invalid stimulator parameters
+# Error: Invalid stimulator parameters
+# Error: Invalid stimulator parameters
+# Error: Invalid stimulator parameters
+# Error: Invalid stimulator parameters
+# KERNEL: Error: KERNEL_0066 Value 9 does not belong to type STD_LOGIC.
+# Error: Cannot force signal "/register_file/writeRegSel" with formula "9".
+# KERNEL: Error: KERNEL_0066 Value 9 does not belong to type STD_LOGIC.
+# Error: Cannot force signal "/register_file/writeRegSel" with formula "9".
+# Error: Invalid stimulator parameters
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+run 1000 ns
+# KERNEL: stopped at time: 2 us
+run 1000 ns
+# KERNEL: stopped at time: 3 us
+run 1000 ns
+# KERNEL: stopped at time: 4 us
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work add -2002  $dsn/src/mux16to1.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\mux16to1.vhd
+# Compile Entity "mux16to1"
+# Compile Architecture "structural" of Entity "mux16to1"
+# Error: COMP96_0329: mux16to1.vhd : (15, 2): Generate statement must have a label.
+# Error: COMP96_0019: mux16to1.vhd : (15, 22): Keyword 'generate' expected.
+# Error: COMP96_0019: mux16to1.vhd : (17, 2): Keyword 'end' expected.
+# Error: COMP96_0016: mux16to1.vhd : (17, 8): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/mux16to1.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\mux16to1.vhd
+# Compile Entity "mux16to1"
+# Compile Architecture "structural" of Entity "mux16to1"
+# Error: COMP96_0019: mux16to1.vhd : (17, 2): Keyword 'begin' expected.
+# Error: COMP96_0019: mux16to1.vhd : (19, 2): Keyword 'end' expected.
+# Error: COMP96_0016: mux16to1.vhd : (19, 8): Design unit declaration expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/mux16to1.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\mux16to1.vhd
+# Compile Entity "mux16to1"
+# Compile Architecture "structural" of Entity "mux16to1"
+# Error: COMP96_0019: mux16to1.vhd : (17, 2): Keyword 'begin' expected.
+# Error: COMP96_0019: mux16to1.vhd : (19, 2): Keyword 'end' expected.
+# Error: COMP96_0016: mux16to1.vhd : (19, 8): Design unit declaration expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/mux16to1.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\mux16to1.vhd
+# Compile Entity "mux16to1"
+# Compile Architecture "structural" of Entity "mux16to1"
+# Error: COMP96_0015: mux16to1.vhd : (29, 2): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/mux16to1.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\mux16to1.vhd
+# Compile Entity "mux16to1"
+# Compile Architecture "structural" of Entity "mux16to1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/mux16to1.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\mux16to1.vhd
+# Compile Entity "mux16to1"
+# Compile Architecture "structural" of Entity "mux16to1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/primitive_type.vhd $dsn/src/xor_2.vhd $dsn/src/half_adder.vhd $dsn/src/full_adder.vhd $dsn/src/test_bench_full_adder.vhd $dsn/src/4bitAdder.vhd $dsn/src/bit16_adder.vhd $dsn/src/bit32_adder.vhd $dsn/src/and64.vhd $dsn/src/or64.vhd $dsn/src/cnth.vhd $dsn/src/clz.vhd $dsn/src/rot.vhd $dsn/src/shlhi.vhd $dsn/src/a.vhd $dsn/src/sfw.vhd $dsn/src/ah.vhd $dsn/src/sfh.vhd $dsn/src/ahs.vhd $dsn/src/sfhs.vhd $dsn/src/mpyu.vhd $dsn/src/absdb.vhd $dsn/src/ALU.vhd $dsn/src/regFile.vhd $dsn/src/mux16to1.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\primitive_type.vhd
+# Compile Entity "inv"
+# Compile Architecture "dataflow" of Entity "inv"
+# Compile Entity "and_2"
+# Compile Architecture "dataflow" of Entity "and_2"
+# Compile Entity "or_2"
+# Compile Architecture "dataflow" of Entity "or_2"
+# File: c:\My_Designs\ESE345Project\src\xor_2.vhd
+# Compile Entity "xor_2"
+# Compile Architecture "xor_2" of Entity "xor_2"
+# File: c:\My_Designs\ESE345Project\src\half_adder.vhd
+# Compile Entity "half_adder"
+# Compile Architecture "structural" of Entity "half_adder"
+# File: c:\My_Designs\ESE345Project\src\full_adder.vhd
+# Compile Entity "full_adder"
+# Compile Architecture "structural" of Entity "full_adder"
+# File: c:\My_Designs\ESE345Project\src\test_bench_full_adder.vhd
+# Compile Entity "testbench"
+# Compile Architecture "behavior" of Entity "testbench"
+# File: c:\My_Designs\ESE345Project\src\4bitAdder.vhd
+# Compile Entity "bit4_adder"
+# Compile Architecture "structural" of Entity "bit4_adder"
+# File: c:\My_Designs\ESE345Project\src\bit16_adder.vhd
+# Compile Entity "bit16_adder"
+# Compile Architecture "structural" of Entity "bit16_adder"
+# File: c:\My_Designs\ESE345Project\src\bit32_adder.vhd
+# Compile Entity "bit32_adder"
+# Compile Architecture "structural" of Entity "bit32_adder"
+# File: c:\My_Designs\ESE345Project\src\and64.vhd
+# Compile Entity "and64"
+# Compile Architecture "and64" of Entity "and64"
+# File: c:\My_Designs\ESE345Project\src\or64.vhd
+# Compile Entity "or64"
+# Compile Architecture "or64" of Entity "or64"
+# File: c:\My_Designs\ESE345Project\src\cnth.vhd
+# Compile Entity "cnth"
+# Compile Architecture "cnth" of Entity "cnth"
+# File: c:\My_Designs\ESE345Project\src\clz.vhd
+# Compile Entity "clz"
+# Compile Architecture "clz" of Entity "clz"
+# File: c:\My_Designs\ESE345Project\src\rot.vhd
+# Compile Entity "rot"
+# Compile Architecture "rot" of Entity "rot"
+# File: c:\My_Designs\ESE345Project\src\shlhi.vhd
+# Compile Entity "shlhi"
+# Compile Architecture "shlhi" of Entity "shlhi"
+# File: c:\My_Designs\ESE345Project\src\a.vhd
+# Compile Entity "a"
+# Compile Architecture "a" of Entity "a"
+# File: c:\My_Designs\ESE345Project\src\sfw.vhd
+# Compile Entity "sfw"
+# Compile Architecture "sfw" of Entity "sfw"
+# File: c:\My_Designs\ESE345Project\src\ah.vhd
+# Compile Entity "ah"
+# Compile Architecture "ah" of Entity "ah"
+# File: c:\My_Designs\ESE345Project\src\sfh.vhd
+# Compile Entity "sfh"
+# Compile Architecture "sfh" of Entity "sfh"
+# File: c:\My_Designs\ESE345Project\src\ahs.vhd
+# Compile Entity "ahs"
+# Compile Architecture "ahs" of Entity "ahs"
+# File: c:\My_Designs\ESE345Project\src\sfhs.vhd
+# Compile Entity "sfhs"
+# Compile Architecture "sfhs" of Entity "sfhs"
+# File: c:\My_Designs\ESE345Project\src\mpyu.vhd
+# Compile Entity "mpyu"
+# Compile Architecture "mpyu" of Entity "mpyu"
+# File: c:\My_Designs\ESE345Project\src\absdb.vhd
+# Compile Entity "absdb"
+# Compile Architecture "absdb" of Entity "absdb"
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (22, 6): Unknown identifier "rdAnd".
+# Error: COMP96_0133: ALU.vhd : (22, 6): Cannot find object declaration.
+# Error: COMP96_0104: ALU.vhd : (22, 2): Undefined type of expression.
+# Error: COMP96_0078: ALU.vhd : (26, 6): Unknown identifier "rdOr".
+# Error: COMP96_0133: ALU.vhd : (26, 6): Cannot find object declaration.
+# Error: COMP96_0104: ALU.vhd : (26, 2): Undefined type of expression.
+# File: c:\My_Designs\ESE345Project\src\regFile.vhd
+# Compile Entity "register_file"
+# Compile Architecture "behavioral" of Entity "register_file"
+# File: c:\My_Designs\ESE345Project\src\mux16to1.vhd
+# Compile Entity "mux16to1"
+# Compile Architecture "structural" of Entity "mux16to1"
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.8 [s]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0724: ALU.vhd : (22, 2): ',' or ')' expected.
+# Error: COMP96_0724: ALU.vhd : (22, 4): ',' or ')' expected.
+# Error: COMP96_0015: ALU.vhd : (22, 5): ';' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+ALU ALU structural
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7232 kB (elbread=1280 elab2=5802 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ESE345Project\src\wave.asdb
+#  下午 04:25, 2016年12月5日
+#  Simulation has been initialized
+# 19 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+acom -O3 -e 100 -work add -2002  $dsn/src/mux16to1.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\mux16to1.vhd
+# Compile Entity "mux16to1"
+# Compile Architecture "structural" of Entity "mux16to1"
+# Error: COMP96_0078: mux16to1.vhd : (16, 10): Unknown identifier "port1".
+# Error: COMP96_0348: mux16to1.vhd : (16, 10): Name on sensitivity list must denote a signal.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/mux16to1.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\mux16to1.vhd
+# Compile Entity "mux16to1"
+# Compile Architecture "structural" of Entity "mux16to1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (16, 30): Unknown identifier "port1".
+# Error: COMP96_0133: ALU.vhd : (16, 30): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (16, 30): "port1" does not match the formal name.
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port16".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port2".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port3".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port4".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port5".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port6".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port7".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port8".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port9".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port10".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port11".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port12".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port13".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port14".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port15".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "opcode".
+# Compile failure 19 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (16, 30): Unknown identifier "port1".
+# Error: COMP96_0133: ALU.vhd : (16, 30): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (16, 30): "port1" does not match the formal name.
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port16".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port2".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port3".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port4".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port5".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port6".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port7".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port8".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port9".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port10".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port11".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port12".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port13".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port14".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port15".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "opcode".
+# Compile failure 19 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (16, 30): Unknown identifier "port116".
+# Error: COMP96_0133: ALU.vhd : (16, 30): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (16, 30): "port116" does not match the formal name.
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port16".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port2".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port3".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port4".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port5".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port6".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port7".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port8".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port9".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port10".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port11".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port12".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port13".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port14".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port15".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "opcode".
+# Compile failure 19 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (16, 30): Unknown identifier "port116".
+# Error: COMP96_0133: ALU.vhd : (16, 30): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (16, 30): "port116" does not match the formal name.
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port16".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port2".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port3".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port4".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port5".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port6".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port7".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port8".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port9".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port10".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port11".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port12".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port13".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port14".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port15".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "opcode".
+# Compile failure 19 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (16, 30): Unknown identifier "port116".
+# Error: COMP96_0133: ALU.vhd : (16, 30): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (16, 30): "port116" does not match the formal name.
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port16".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port2".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port3".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port4".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port5".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port6".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port7".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port8".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port9".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port10".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port11".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port12".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port13".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port14".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port15".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "opcode".
+# Compile failure 19 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (16, 30): Unknown identifier "port116".
+# Error: COMP96_0133: ALU.vhd : (16, 30): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (16, 30): "port116" does not match the formal name.
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port16".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port2".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port3".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port4".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port5".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port6".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port7".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port8".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port9".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port10".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port11".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port12".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port13".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port14".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "port15".
+# Error: COMP96_0207: ALU.vhd : (16, 0): No actual specified for local port "opcode".
+# Compile failure 19 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (29, 2): Unknown identifier "i2".
+# Error: COMP96_0133: ALU.vhd : (29, 2): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (29, 2): "i2" does not match the formal name.
+# Error: COMP96_0078: ALU.vhd : (34, 2): Unknown identifier "i2".
+# Error: COMP96_0133: ALU.vhd : (34, 2): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (34, 2): "i2" does not match the formal name.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (29, 2): Unknown identifier "i2".
+# Error: COMP96_0133: ALU.vhd : (29, 2): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (29, 2): "i2" does not match the formal name.
+# Error: COMP96_0078: ALU.vhd : (34, 2): Unknown identifier "i2".
+# Error: COMP96_0133: ALU.vhd : (34, 2): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (34, 2): "i2" does not match the formal name.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (29, 2): Unknown identifier "i2".
+# Error: COMP96_0133: ALU.vhd : (29, 2): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (29, 2): "i2" does not match the formal name.
+# Error: COMP96_0078: ALU.vhd : (34, 2): Unknown identifier "i2".
+# Error: COMP96_0133: ALU.vhd : (34, 2): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (34, 2): "i2" does not match the formal name.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (29, 2): Unknown identifier "i2".
+# Error: COMP96_0133: ALU.vhd : (29, 2): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (29, 2): "i2" does not match the formal name.
+# Error: COMP96_0078: ALU.vhd : (34, 2): Unknown identifier "i2".
+# Error: COMP96_0133: ALU.vhd : (34, 2): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (34, 2): "i2" does not match the formal name.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (34, 2): Unknown identifier "i2".
+# Error: COMP96_0133: ALU.vhd : (34, 2): Cannot find object declaration.
+# Error: COMP96_0112: ALU.vhd : (34, 2): "i2" does not match the formal name.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work add -2002  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\My_Designs\ESE345Project\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+ALU ALU structural
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7249 kB (elbread=1280 elab2=5818 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location c:\My_Designs\ESE345Project\src\wave.asdb
+#  下午 04:58, 2016年12月5日
+#  Simulation has been initialized
+# 20 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'c:/My_Designs/ESE345Project/src/wave.asdb'.
+run 1000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 100 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 200 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 300 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 400 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 400 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 400 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 500 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 500 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 500 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 600 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 600 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 600 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 700 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 700 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 700 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 800 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 800 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 800 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 900 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 900 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 900 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1 us,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1 us,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1 us,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: stopped at time: 1 us
+run 1000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1100 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1100 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1100 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1200 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1200 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1200 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1300 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1300 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1300 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1400 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1400 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1400 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1500 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1500 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1500 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1600 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1600 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1600 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1700 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1700 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1700 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1800 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1800 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1800 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1800 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1900 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1900 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1900 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 1900 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2 us,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2 us,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2 us,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2 us,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: stopped at time: 2 us
+run 1000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2100 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2100 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2100 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2100 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2200 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2200 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2200 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2200 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2300 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2300 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2300 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2300 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2400 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2400 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2400 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2400 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2500 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2500 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2500 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2500 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2600 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2600 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2600 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2600 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2700 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2700 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2700 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2700 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2800 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2800 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2800 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2800 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2900 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2900 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2900 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 2900 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3 us,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3 us,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3 us,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3 us,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: stopped at time: 3 us
+# Error: You do not have valid license to run Testbench generation
+# Contact Aldec for ordering information - sales@aldec.com
+run 1000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3100 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3100 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3100 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3100 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3200 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3200 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3200 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3200 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3300 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3300 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3300 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3300 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3400 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3400 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3400 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3400 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3500 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3500 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3500 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3500 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3600 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3600 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3600 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3600 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3700 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3700 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3700 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3700 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3800 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3800 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3800 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3800 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3900 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3900 ns,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3900 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 3900 ns,  Iteration: 0,  Instance: /ALU/u4,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 4 us,  Iteration: 0,  Instance: /ALU/u3,  Process: line__14.
+# KERNEL: WARNING: NUMERIC_STD.TO_UNSIGNED: vector truncated
+# KERNEL: Time: 4 us,  Iteration: 0,  Instance:

@@ -6,7 +6,9 @@ use ieee.numeric_std.all;
 entity ALU is 
 	port(a_in,b_in: in std_logic_vector(63 downto 0);		
 	opcode: in std_logic_vector(3 downto 0);
-	result: out std_logic_vector(63 downto 0));
+	result: out std_logic_vector(63 downto 0);
+	rt,rs: in std_logic_vector(3 downto 0)
+	);
 end ALU;
 
 architecture structural of ALU is	   	
@@ -14,7 +16,7 @@ architecture structural of ALU is
 begin				   
 	
 	u0:entity mux16to1 port map(port16=>port16, port2=>port2,port3=>port3, port4=>port4,port5=>port5, port6=>port6,port7=>port7, port8=>port8,port9=>port9, port10=>port10,
-		port11=>port11, port12=>port12,port13=>port13, port14=>port14,port15=>port15,	
+		port11=>port11, port12=>port12,port13=>port13, port14=>port14,port15=>port15,	rt=> rt	  ,rs=>rs, 
 		opcode => opcode, output=>result);				
 	
 	u1:entity and64 port map(i1=>a_in, 

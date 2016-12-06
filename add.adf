@@ -88,6 +88,12 @@ Extension7=htm;html
 /regFile.vhd=-1
 /mux16to1.vhd=-1
 /InstBuff.vhd=-1
+/untitled.asdb=-1
+/untitled.awc=-1
+/IF_ID_Reg.vhd=-1
+/ID_EX_REG.vhd=-1
+/piplinedUnit.vhd=-1
+/testbench.vhd=-1
 
 [Files.Data]
 .\src\primitive_type.vhd=VHDL Source Code
@@ -117,3 +123,9 @@ Extension7=htm;html
 .\src\regFile.vhd=VHDL Source Code
 .\src\mux16to1.vhd=VHDL Source Code
 .\src\InstBuff.vhd=VHDL Source Code
+.\src\untitled.asdb=Accelerated Waveform File
+.\src\untitled.awc=Accelerated Waveform Configuration
+.\src\IF_ID_Reg.vhd=VHDL Source Code
+.\src\ID_EX_REG.vhd=VHDL Source Code
+.\src\piplinedUnit.vhd=VHDL Source Code
+.\src\testbench.vhd=VHDL Source Code

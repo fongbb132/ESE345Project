@@ -24,3 +24,7 @@
 .\src\regFile.vhd
 .\src\mux16to1.vhd
 .\src\InstBuff.vhd
+.\src\IF_ID_Reg.vhd
+.\src\ID_EX_REG.vhd
+.\src\piplinedUnit.vhd
+.\src\testbench.vhd
